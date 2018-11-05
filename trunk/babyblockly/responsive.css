@@ -1,0 +1,307 @@
+/* Landscape */
+@media screen
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (max-width: 799px)
+  and (orientation: landscape) {
+
+    body {
+      font-size: 7px;
+    }
+
+    #menu_left button {
+        width: 30px;
+        height: 30px;
+
+        padding: 0;
+        margin-bottom: 1em;
+    }
+
+    .blocklyTreeLabel {
+      font-size: inherit;
+    }
+
+    #startstop {
+        position: absolute;
+        z-index: 100;
+        top: 141px;
+        left: 19px;
+    }
+
+    #startOutline {
+      left: -2.5px;
+      width: 47px;
+      height: 47px;
+    }
+
+    button#sendStart {
+    height: 35px;
+    width: 35px;
+    border-radius: 17.5px;
+
+    top: -41px;
+    left: 3.5px;
+    font-size: 2em;
+
+    }
+
+    button#filesDialog, button#info {
+
+      width: 28px;
+          margin-bottom: 9px;
+          top: -22.5px;
+          left: 8px;
+
+    }
+
+    #controls table tr td button, #controls button {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    }
+
+    #controls_right input[type=range]::-webkit-slider-thumb {
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+    margin-top: -10px;
+
+}
+
+#controls_right input[type=range]::-webkit-slider-runnable-track {
+  height: 5px;
+  border-radius: 2.5px;
+}
+
+#controls_right button {
+    margin: 7% 5% 15.5px;
+    width: 39%;
+}
+
+#controls_right {
+    width: 50%;
+    float: right;
+    padding: 3% 10% 10% 2em;
+    box-sizing: border-box;
+}
+
+#customDialog {
+    width: 150px;
+
+    border-radius: 10px;
+    margin-top: 35px !important ;
+}
+
+
+#customDialogInput {
+
+    width: 140px;
+    padding: 5px;
+
+    font-size: 2em;
+
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#customDialog form input[type=button] {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 2.2em;
+
+    border-radius: 5px;
+
+}
+
+input[type=range] {
+
+    margin: 5px 0;
+
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 2.5px;
+    border-radius: 2.5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    margin-top: -3.5px;
+}
+
+#code_area {
+    font-size: 0.8em;
+    padding: 0.4em;
+    border-radius: 0 0 6px 6px;
+    font-size: 1.4em;
+    margin: 0px;
+}
+
+#filesList li, #examplesList li {
+
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 5px;
+    line-height: 15px;
+    font-size: 1.3em;
+}
+
+
+#newProject, #saveFile {
+    width: 45%;
+    margin: 15px 0;
+    font-size: 1.1em;
+
+}
+
+#files svg {
+  width: 30px;
+}
+
+#files h3 {
+
+    left: 47px;
+
+    margin-right: 1em;
+    font-size: 2em;
+    top: 27px;
+    margin-top: 7.5px;
+}
+
+
+#controls {
+height: 60%;
+}
+
+#robot_outline2 {
+    top: 12.5px;
+    left: 218px;
+}
+
+.robot_icon {
+  position: absolute;
+      top: 20.4px;
+      right: 44.5px;
+      width: 30px;
+}
+
+#refreshButton, #disconnectButton {
+
+    border-radius: 3.5px;
+    font-size: 1em;
+
+    padding: 0.6em;
+    margin-right: 0.5em;
+
+}
+
+#connection_box h3, #files h3 {
+    margin: 0;
+
+    font-size: 1.3em;
+
+    margin-top: 5px;
+}
+
+.inputs_monitor {
+
+    font-size: 1.2em;
+}
+
+
+
+#inputs_monitor_table {
+
+}
+
+.blocklyZoom {
+/*  transform: translate(545px, 200px) !important; */
+}
+
+
+.console_head {
+  font-size: 1.2em;
+    padding-left: 1em;
+}
+
+
+#menu_left {
+
+    top: 15px;
+    right: 15px;
+
+}
+
+#console {
+    position: absolute;
+    top: 20px;
+    right: 70px;
+  }
+
+  .blocklyWidgetDiv .goog-menuitem-content {
+    font-size: inherit;
+    font-family: 'Lato';
+}
+
+
+.blocklyScrollbarVertical, .blocklyScrollbarHorizontal {
+  display:none;
+}
+
+#filesList li .close {
+
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+
+    padding: 2.5px 5px 5px 4px;
+
+    line-height: 10px;
+}
+
+#robot_outline, #robot_outline2 {
+
+    top: -8px;
+    left: -7.5px;
+
+    width: 35px;
+    height: 35px;
+    border-radius: 22px;
+    z-index: -1;
+}
+
+.connected_name {
+
+    padding: 0.3em;
+
+    font-size: 1em;
+    margin-top: 0em;
+    border-radius: 2px;
+
+}
+
+#deviceList li {
+    font-size: 1em;
+
+    border-radius: 3px;
+  }
+
+  #robot_outline2 {
+    top: 12.5px;
+    left: 218px;
+}
+
+#languageMenu {
+
+    width: 95%;
+    font-size: 1.3em;
+    height: 2.5em;
+}
+
+}

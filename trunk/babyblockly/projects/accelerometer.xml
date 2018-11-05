@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+   <block type="main_repeat" id="7u9*r/~^#Pu^zRr!A6*X" deletable="false" x="73" y="94">
+      <statement name="repeat_code">
+         <block type="setmotor" id="K2p4DWi,eFZIyWfsWV6j">
+            <field name="motor">m1</field>
+            <field name="direction">forward</field>
+            <value name="power">
+               <block type="accelerometer" id="p.YHa2wcf25@Wx}YfOp6">
+                  <field name="position">accelX</field>
+               </block>
+            </value>
+            <next>
+               <block type="setmotor" id="@`Lvvwd@HM~mTIdLqYh}">
+                  <field name="motor">m2</field>
+                  <field name="direction">forward</field>
+                  <value name="power">
+                     <block type="accelerometer" id="[R{K{DV]f![o_#/CX-Dz">
+                        <field name="position">accelY</field>
+                     </block>
+                  </value>
+               </block>
+            </next>
+         </block>
+      </statement>
+   </block>
+</xml>

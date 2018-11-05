@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+   <block type="main_repeat" id="7u9*r/~^#Pu^zRr!A6*X" deletable="false" x="140" y="50">
+      <statement name="repeat_code">
+         <block type="setmotor" id="MhD5*O@~K$WtGswg~s/a">
+            <field name="motor">m1</field>
+            <field name="direction">forward</field>
+            <value name="power">
+               <block type="number" id="hCKj?pqk,_`.j05K6LI4">
+                  <field name="num">100</field>
+               </block>
+            </value>
+            <next>
+               <block type="setmotor" id="2$!xhp]Y3FpT-LSpB}NI">
+                  <field name="motor">m2</field>
+                  <field name="direction">forward</field>
+                  <value name="power">
+                     <block type="number" id=":@%KJJro8b:]E;~bbd]s">
+                        <field name="num">100</field>
+                     </block>
+                  </value>
+                  <next>
+                     <block type="delay_block" id="x4U3d`P/#/pvOK!ST?Ah">
+                        <value name="delay_time">
+                           <block type="number" id="`M48fy4APg^;WJwX:lq~">
+                              <field name="num">500</field>
+                           </block>
+                        </value>
+                        <next>
+                           <block type="setmotor" id="liOxhsi;})?3X{8x2r@.">
+                              <field name="motor">m1</field>
+                              <field name="direction">backward</field>
+                              <value name="power">
+                                 <block type="number" id="%`]lTjtS+4}NW~|+hF6J">
+                                    <field name="num">100</field>
+                                 </block>
+                              </value>
+                              <next>
+                                 <block type="setmotor" id="g[=w~JV!HcQm{#s.n;kS">
+                                    <field name="motor">m2</field>
+                                    <field name="direction">backward</field>
+                                    <value name="power">
+                                       <block type="number" id="O6wC)]ZGv_k$Sv-J8O/M">
+                                          <field name="num">100</field>
+                                       </block>
+                                    </value>
+                                    <next>
+                                       <block type="delay_block" id="]/m2e:sO~*9zM9U~EZRi">
+                                          <value name="delay_time">
+                                             <block type="number" id="q}(irB5BSG]gdouoB@7I">
+                                                <field name="num">500</field>
+                                             </block>
+                                          </value>
+                                          <next>
+                                             <block type="setmotor" id="4]wR{6ferM(fe$gu7?wd">
+                                                <field name="motor">m1</field>
+                                                <field name="direction">backward</field>
+                                                <value name="power">
+                                                   <block type="number" id="c6IZIx=I_+0gcANH;akd">
+                                                      <field name="num">100</field>
+                                                   </block>
+                                                </value>
+                                                <next>
+                                                   <block type="setmotor" id="Xe!-d%eXb*2$qW@0~7HH">
+                                                      <field name="motor">m2</field>
+                                                      <field name="direction">forward</field>
+                                                      <value name="power">
+                                                         <block type="number" id="QzyLKD;w}e$Qh9s)Iq)a">
+                                                            <field name="num">100</field>
+                                                         </block>
+                                                      </value>
+                                                      <next>
+                                                         <block type="delay_block" id="]WTgxZREQ5fx`FUT!pt|">
+                                                            <value name="delay_time">
+                                                               <block type="number" id="w/(BePAF-*At]Qv8HHK!">
+                                                                  <field name="num">400</field>
+                                                               </block>
+                                                            </value>
+                                                         </block>
+                                                      </next>
+                                                   </block>
+                                                </next>
+                                             </block>
+                                          </next>
+                                       </block>
+                                    </next>
+                                 </block>
+                              </next>
+                           </block>
+                        </next>
+                     </block>
+                  </next>
+               </block>
+            </next>
+         </block>
+      </statement>
+   </block>
+</xml>

@@ -1,0 +1,147 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+   <block type="main_repeat" id="7u9*r/~^#Pu^zRr!A6*X" deletable="false" x="79" y="37">
+      <statement name="repeat_code">
+         <block type="if" id="7Jmpc=1]J1fqFpy)*ymi">
+            <value name="if_condition">
+               <block type="compare" id="Pe|x_;TTy7Lf2.^x(1el">
+                  <field name="comparator">more</field>
+                  <value name="compare_left">
+                     <block type="distance" id="!{r%c5`h7)0vZ0,h/vqH" />
+                  </value>
+                  <value name="compare_right">
+                     <block type="number" id="(CyDojlXsQF`Z4NEbN/g">
+                        <field name="num">30</field>
+                     </block>
+                  </value>
+               </block>
+            </value>
+            <statement name="if_content">
+               <block type="setmotor" id="^bO@P~,*(jdn4;ESA(ZU">
+                  <field name="motor">m1</field>
+                  <field name="direction">forward</field>
+                  <value name="power">
+                     <block type="number" id="e5+aRMi8Ue,{G#ff76dV">
+                        <field name="num">100</field>
+                     </block>
+                  </value>
+                  <next>
+                     <block type="setmotor" id="z`:Ew7q%0a;hgpA[h_CG">
+                        <field name="motor">m2</field>
+                        <field name="direction">forward</field>
+                        <value name="power">
+                           <block type="number" id="Rv.{V5oj+U*#!o0O4ql/">
+                              <field name="num">100</field>
+                           </block>
+                        </value>
+                     </block>
+                  </next>
+               </block>
+            </statement>
+            <next>
+               <block type="if" id="7!%N!}^1{{a@,GKgX@lJ">
+                  <value name="if_condition">
+                     <block type="bool_and" id="2CMh}m34MVMi~k.vRG@3">
+                        <value name="left">
+                           <block type="compare" id="568FY21C/)3/[X,ta#_O">
+                              <field name="comparator">less</field>
+                              <value name="compare_left">
+                                 <block type="distance" id="YR`,wP7tpP-yR/wN`NT5" />
+                              </value>
+                              <value name="compare_right">
+                                 <block type="number" id="hk(5*^t9-rwbCOz2eLxQ">
+                                    <field name="num">30</field>
+                                 </block>
+                              </value>
+                           </block>
+                        </value>
+                        <value name="right">
+                           <block type="compare" id="XJj^mY/)eHY2EUl;.jxr">
+                              <field name="comparator">more</field>
+                              <value name="compare_left">
+                                 <block type="distance" id="Vs~G.P,Dt8(QbPv!=1_h" />
+                              </value>
+                              <value name="compare_right">
+                                 <block type="number" id="Y?/.5[y]%:m6JXh%cHW_">
+                                    <field name="num">10</field>
+                                 </block>
+                              </value>
+                           </block>
+                        </value>
+                     </block>
+                  </value>
+                  <statement name="if_content">
+                     <block type="delay_block" id="$8bGQjTGAXvbXzNJ/a1g">
+                        <value name="delay_time">
+                           <block type="number" id="ruCo$VsDSxMc.YVm[#F6">
+                              <field name="num">500</field>
+                           </block>
+                        </value>
+                        <next>
+                           <block type="setmotor" id="!2lwiqYAbKd_@DY~`9iZ">
+                              <field name="motor">m1</field>
+                              <field name="direction">forward</field>
+                              <value name="power">
+                                 <block type="number" id="xe@XhoJ$ZYS*N|1R+v+*">
+                                    <field name="num">100</field>
+                                 </block>
+                              </value>
+                              <next>
+                                 <block type="setmotor" id="1H3:*vEsiXFW;!A7H4w7">
+                                    <field name="motor">m2</field>
+                                    <field name="direction">backward</field>
+                                    <value name="power">
+                                       <block type="number" id="~awE|A@z2(L*%[k{p3FZ">
+                                          <field name="num">100</field>
+                                       </block>
+                                    </value>
+                                 </block>
+                              </next>
+                           </block>
+                        </next>
+                     </block>
+                  </statement>
+                  <next>
+                     <block type="if" id="=t%:gsDIBGB}%qDk2.c}">
+                        <value name="if_condition">
+                           <block type="compare" id="*)sT4A}2QkW9E*m-,(q%">
+                              <field name="comparator">less</field>
+                              <value name="compare_left">
+                                 <block type="distance" id="LlftS,/}[P[*+`1%VY#." />
+                              </value>
+                              <value name="compare_right">
+                                 <block type="number" id="^SL|s^xpg$:s;=U(gpPH">
+                                    <field name="num">10</field>
+                                 </block>
+                              </value>
+                           </block>
+                        </value>
+                        <statement name="if_content">
+                           <block type="setmotor" id="+32AfUpPD}xCv)TFme3K">
+                              <field name="motor">m1</field>
+                              <field name="direction">backward</field>
+                              <value name="power">
+                                 <block type="number" id="q1Jl*jL*.9[B~/hr+B.M">
+                                    <field name="num">100</field>
+                                 </block>
+                              </value>
+                              <next>
+                                 <block type="setmotor" id="gN}.X:rq[PMLg/Njt*[C">
+                                    <field name="motor">m2</field>
+                                    <field name="direction">backward</field>
+                                    <value name="power">
+                                       <block type="number" id="$-W;zm8L*Z_,W(jDIraZ">
+                                          <field name="num">100</field>
+                                       </block>
+                                    </value>
+                                 </block>
+                              </next>
+                           </block>
+                        </statement>
+                     </block>
+                  </next>
+               </block>
+            </next>
+         </block>
+      </statement>
+   </block>
+</xml>

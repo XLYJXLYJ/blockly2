@@ -1,0 +1,56 @@
+<xml id="light_example" style="display:none">
+   <block type="main_repeat" id="7u9*r/~^#Pu^zRr!A6*X" deletable="false" x="63" y="76">
+      <statement name="repeat_code">
+         <block type="variables_set" id="!8*|C8#+g[GPkmCHwe70">
+            <field name="VAR">czułość</field>
+            <value name="VALUE">
+               <block type="number" id="]?-)8vwi;^Y8|ce=VaB!">
+                  <field name="num">2</field>
+               </block>
+            </value>
+            <next>
+               <block type="setmotor" id="HWB1~Xu~u_Fi#^~lH[4)">
+                  <field name="motor">m1</field>
+                  <field name="direction">backward</field>
+                  <value name="power">
+                     <block type="string_math_arithmetic" id="O9Y%4XaqZtRN#5,v`-uQ">
+                        <field name="operator">multiply</field>
+                        <value name="left_value">
+                           <block type="read_input" id=":l5;Xan[mXOJI]#c4^Pk">
+                              <field name="input_number">input2</field>
+                           </block>
+                        </value>
+                        <value name="right_value">
+                           <block type="variables_get" id="v9z|t%tHin3KaOu!,_IU">
+                              <field name="VAR">czułość</field>
+                           </block>
+                        </value>
+                     </block>
+                  </value>
+                  <next>
+                     <block type="setmotor" id="mekO(nqbyAYBNN3MpC=9">
+                        <field name="motor">m2</field>
+                        <field name="direction">backward</field>
+                        <value name="power">
+                           <block type="string_math_arithmetic" id="R#T(5zv0)p}19G~K8?C^">
+                              <field name="operator">multiply</field>
+                              <value name="left_value">
+                                 <block type="read_input" id="f4MMt1,4U$$jcCakp)I1">
+                                    <field name="input_number">input1</field>
+                                 </block>
+                              </value>
+                              <value name="right_value">
+                                 <block type="variables_get" id="G#3|DSpRWNS;s|mODfk+">
+                                    <field name="VAR">czułość</field>
+                                 </block>
+                              </value>
+                           </block>
+                        </value>
+                     </block>
+                  </next>
+               </block>
+            </next>
+         </block>
+      </statement>
+   </block>
+</xml>

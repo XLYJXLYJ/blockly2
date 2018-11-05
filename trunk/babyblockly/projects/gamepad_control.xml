@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+   <block type="main_repeat" id="7u9*r/~^#Pu^zRr!A6*X" deletable="false" x="140" y="50">
+      <statement name="repeat_code">
+         <block type="if" id="FuESk*Cpg@Q#OU_bZZ)_">
+            <value name="if_condition">
+               <block type="button" id="CH.AjpYs7zR3;]4Yaxg)">
+                  <field name="button_name">up_arrow</field>
+               </block>
+            </value>
+            <statement name="if_content">
+               <block type="setmotor" id="ad4K{xYP)KC]fi|/2KTc">
+                  <field name="motor">m1</field>
+                  <field name="direction">forward</field>
+                  <value name="power">
+                     <block type="number" id="hz|xueG^gTly3ETVd+k{">
+                        <field name="num">100</field>
+                     </block>
+                  </value>
+                  <next>
+                     <block type="setmotor" id="Ve8{,P(~LKHPRr0nYFv[">
+                        <field name="motor">m2</field>
+                        <field name="direction">forward</field>
+                        <value name="power">
+                           <block type="number" id="J;ffzl,yxuxOOL93WmG=">
+                              <field name="num">100</field>
+                           </block>
+                        </value>
+                     </block>
+                  </next>
+               </block>
+            </statement>
+            <next>
+               <block type="if" id="33:d5wgR}f=(A0BE0Q$M">
+                  <value name="if_condition">
+                     <block type="button" id="Y3(gVR:d%[(Snneg^K*~">
+                        <field name="button_name">down_arrow</field>
+                     </block>
+                  </value>
+                  <statement name="if_content">
+                     <block type="setmotor" id="lA3sS/Sn.q7(F69J1/+t">
+                        <field name="motor">m1</field>
+                        <field name="direction">backward</field>
+                        <value name="power">
+                           <block type="number" id="!uc@mV$TNw{63j^8{PiK">
+                              <field name="num">100</field>
+                           </block>
+                        </value>
+                        <next>
+                           <block type="setmotor" id="Mg]dnTA?k=Z%XMbltl}h">
+                              <field name="motor">m2</field>
+                              <field name="direction">backward</field>
+                              <value name="power">
+                                 <block type="number" id="K}|?C)=JdCP/r~lAG@vf">
+                                    <field name="num">100</field>
+                                 </block>
+                              </value>
+                           </block>
+                        </next>
+                     </block>
+                  </statement>
+                  <next>
+                     <block type="if" id="2N[_I(PB{/]0:?Eg0n*A">
+                        <value name="if_condition">
+                           <block type="button" id="REuAOkfoW%npXP9G5V,G">
+                              <field name="button_name">left_arrow</field>
+                           </block>
+                        </value>
+                        <statement name="if_content">
+                           <block type="setmotor" id="h]8}C+LNztWVlBbP_EV{">
+                              <field name="motor">m1</field>
+                              <field name="direction">forward</field>
+                              <value name="power">
+                                 <block type="number" id="3TbKW@=g/S]G4_fFzamN">
+                                    <field name="num">100</field>
+                                 </block>
+                              </value>
+                              <next>
+                                 <block type="setmotor" id="?#xLYZV)~](pS!~ih#va">
+                                    <field name="motor">m2</field>
+                                    <field name="direction">backward</field>
+                                    <value name="power">
+                                       <block type="number" id="(]$I6PW!SRy]Lr]WE^8u">
+                                          <field name="num">100</field>
+                                       </block>
+                                    </value>
+                                 </block>
+                              </next>
+                           </block>
+                        </statement>
+                        <next>
+                           <block type="if" id="PeC^Ix.+uW}*rC|Pyy(5">
+                              <value name="if_condition">
+                                 <block type="button" id="%q!M{*%#v+Qyg,{z-`bp">
+                                    <field name="button_name">right_arrow</field>
+                                 </block>
+                              </value>
+                              <statement name="if_content">
+                                 <block type="setmotor" id="oR?L?~+jmg-;D6h9(ji^">
+                                    <field name="motor">m1</field>
+                                    <field name="direction">backward</field>
+                                    <value name="power">
+                                       <block type="number" id="vd0ywZvjhM9J4}=2A$QU">
+                                          <field name="num">100</field>
+                                       </block>
+                                    </value>
+                                    <next>
+                                       <block type="setmotor" id="b)[sAmwBkQ^obP0]`K)p">
+                                          <field name="motor">m2</field>
+                                          <field name="direction">forward</field>
+                                          <value name="power">
+                                             <block type="number" id="MR*cWnpDo5sWuE$..8!L">
+                                                <field name="num">100</field>
+                                             </block>
+                                          </value>
+                                       </block>
+                                    </next>
+                                 </block>
+                              </statement>
+                              <next>
+                                 <block type="if" id="N=Qu__AlmxwmG5hcWd#a">
+                                    <value name="if_condition">
+                                       <block type="button" id="}BV^/-41#Y`dUs8x$t(8">
+                                          <field name="button_name">nobutton</field>
+                                       </block>
+                                    </value>
+                                    <statement name="if_content">
+                                       <block type="setmotor" id="x7VU]L^RVuYp(IXrQ;=4">
+                                          <field name="motor">m1</field>
+                                          <field name="direction">forward</field>
+                                          <value name="power">
+                                             <block type="number" id="EIm)a?*7sio.a4bGPUuR">
+                                                <field name="num">0</field>
+                                             </block>
+                                          </value>
+                                          <next>
+                                             <block type="setmotor" id="+gg6LTHLI[[i%.tZI#(S">
+                                                <field name="motor">m2</field>
+                                                <field name="direction">forward</field>
+                                                <value name="power">
+                                                   <block type="number" id="ScCGsE2R?Lv:8!u+uCj%">
+                                                      <field name="num">0</field>
+                                                   </block>
+                                                </value>
+                                             </block>
+                                          </next>
+                                       </block>
+                                    </statement>
+                                 </block>
+                              </next>
+                           </block>
+                        </next>
+                     </block>
+                  </next>
+               </block>
+            </next>
+         </block>
+      </statement>
+   </block>
+</xml>
